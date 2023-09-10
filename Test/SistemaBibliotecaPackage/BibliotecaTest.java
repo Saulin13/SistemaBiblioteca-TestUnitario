@@ -36,4 +36,13 @@ class BibliotecaTest {
 	        biblioteca.retornarLivro(1, 123);
 	        assertFalse(biblioteca.livrosEmprestados.contains(livro));
 	    }
+
+	@Test
+		void testBuscarLivros() {
+	        Livros livro = new Livros(1, "Autor1", "Livro1");
+	        biblioteca.registrarLivro(livro);
+	        Livros livroEncontrado = biblioteca.buscarLivros(1);
+	        assertNotNull(livroEncontrado);
+	        assertEquals(livro, livroEncontrado);
+	    }
 }
