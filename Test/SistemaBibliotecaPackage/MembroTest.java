@@ -1,3 +1,4 @@
+package SistemaBibliotecaPackage;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -18,7 +19,7 @@ class MembroTest {
 	
 	 @Test
 	    public void testMembroPegaEmprestado() {
-		   Livros livro = new Livros( 1 , "Test", "Test2");
+		   Livros livro = new Livros( 1 , "Test", "Test2", 2);
 	        
 	        membro.membroPegaEmprestado(livro);
 	        
@@ -27,7 +28,7 @@ class MembroTest {
 	
 	@Test
         public void testMembroRetornaLivro() {
-             Livros livro = new Livros( 1 , "Test", "Test2");
+             Livros livro = new Livros( 1 , "Test", "Test2", 2);
 
             membro.membroPegaEmprestado(livro);
             membro.membroRetornaLivro(livro);

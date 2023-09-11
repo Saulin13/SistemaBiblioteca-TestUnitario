@@ -1,7 +1,7 @@
 package SistemaBibliotecaPackage;
 import java.util.Scanner;
 
-import Biblioteca.Livros;
+import SistemaBibliotecaPackage.Livros;
 
 import java.util.Random;
 import java.util.ArrayList;
