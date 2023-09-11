@@ -28,4 +28,27 @@ public class Biblioteca {
             System.out.println("Livro nao disponivel");
         }
     }
+
+    public void retornarLivro(int livroId, int membroId) {
+        Livros livro = buscarLivros(livroId);
+
+        if (livro != null && livro.getMembroEmprestado() == membroId) {
+            livro.devolver();
+            livrosEmprestados.remove(livro);
+            System.out.println("Livro devolvido com sucesso");
+        } else {
+            System.out.println("Livro nao esta com esse membro");
+        }
+    }
+    
+
+    public Livros buscarLivros(int livroId) {
+        for (Livros livro : armazenamento) {
+            if (livro.getId() == livroId) {
+            	
+                return livro;
+            }
+        }
+        return null;
+    }
 }
