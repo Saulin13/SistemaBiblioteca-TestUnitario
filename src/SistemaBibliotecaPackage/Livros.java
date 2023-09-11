@@ -8,12 +8,12 @@ public class Livros {
 	private boolean emprestado;
 	
 	// construtor
-	public Livros(int id, String titulo, String autor, int codigoMembro) {
+	public Livros(int id, String titulo, String autor) {
 		this.id = id;
 		this.titulo = titulo;
 		this.autor = autor;
 		this.emprestado = false;
-		this.setCodigoMembro(codigoMembro);
+		this.codigoMembro = 0;
 	}
 	
 	public Livros() {
@@ -27,11 +27,13 @@ public class Livros {
 	public void emprestar(int membroId) {
 		emprestado = true;
 		setMembroEmprestado(membroId);
+		setCodigoMembro(membroId);
 	}
 	
 	public void devolver() {
 		emprestado = false;
 		setMembroEmprestado(-1);
+		setCodigoMembro(0);
 	}
 	
 

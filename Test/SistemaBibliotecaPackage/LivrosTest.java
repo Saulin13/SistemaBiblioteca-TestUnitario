@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class LivrosTest {
 
-	Livros livro = new Livros( 1 , "Test", "Test2", 2);
+	Livros livro = new Livros( 1 , "Test", "Test2");
 	
 	
 	
