@@ -29,10 +29,6 @@ public class Livros {
 		setMembroEmprestado(membroId);
 	}
 	
-	public void devolver() {
-		emprestado = true;
-		setMembroEmprestado(-1);
-	}
 	
 
 	public int getId() {

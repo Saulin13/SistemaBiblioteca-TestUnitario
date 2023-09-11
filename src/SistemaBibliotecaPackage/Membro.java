@@ -1,4 +1,4 @@
-package Biblioteca;
+package SistemaBibliotecaPackage;
 
 import java.util.ArrayList;
 

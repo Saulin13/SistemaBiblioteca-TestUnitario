@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import Biblioteca.Biblioteca;
-import Biblioteca.Livros;
+import SistemaBibliotecaPackage.Biblioteca;
+import SistemaBibliotecaPackage.Livros;
 
 class BibliotecaTest {
 

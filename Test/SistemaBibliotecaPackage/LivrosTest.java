@@ -25,6 +25,14 @@ class LivrosTest {
 		 assertEquals(true, livro.isEmprestado());
 		
 	}
+	
+	@Test
+	void testDevolverLivro() {
+		livro.emprestar(1);
+        assertTrue(livro.isEmprestado());
+        livro.devolver();
+        assertFalse(livro.isEmprestado());
+	}
 
 }
 

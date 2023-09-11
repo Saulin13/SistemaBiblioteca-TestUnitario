@@ -2,8 +2,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import Biblioteca.Livros;
-import Biblioteca.Membro;
+import SistemaBibliotecaPackage.Livros;
+import SistemaBibliotecaPackage.Membro;
 
 class MembroTest {
 	
