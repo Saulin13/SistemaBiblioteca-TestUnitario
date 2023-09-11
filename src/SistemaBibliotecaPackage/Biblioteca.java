@@ -1,5 +1,8 @@
 package SistemaBibliotecaPackage;
 import java.util.Scanner;
+
+import Biblioteca.Livros;
+
 import java.util.Random;
 import java.util.ArrayList;
 
@@ -50,5 +53,9 @@ public class Biblioteca {
             }
         }
         return null;
+    }
+    
+    public void imprimirLivros(Livros livro) {
+        System.out.println("Titulo: " + livro.getTitulo() + ", Autor: " + livro.getAutor() + ", Codigo: " + livro.getId()+ ", Codigo Do Membro: "+ livro.getCodigoMembro());
     }
 }
